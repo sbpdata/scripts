@@ -10,7 +10,6 @@ library(WDI)
 # install_github("expersso/maddison")
 library(maddison)
 
-
 ## OUTPUT PATH
 output_dir <- "../data/joined_gdp_cap.csv"
 
@@ -54,7 +53,6 @@ pwt_tidy <- as_tibble(pwt9.1) %>%
 #######################
 ### join the frames ###
 #######################
-
 joined <- wdi_tidy %>%
 	left_join(mad_tidy) %>%
 	left_join(pwt_tidy) 
